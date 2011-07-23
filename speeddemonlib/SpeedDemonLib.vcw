@@ -1,0 +1,104 @@
+Microsoft eMbedded Visual Tools Workspace File, Format Version 4.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "SpeedDemonLib"=.\SpeedDemonLib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name sdmon
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "sdmon"=..\sdmon\sdmon.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sdtest_ppc1"=..\sdtest_ppc1\sdtest_ppc1.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SpeedDemonLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "sdtest_ppc2"=..\sdtest_ppc2\sdtest_ppc2.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SpeedDemonLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "sdtest_ppc2dll"=..\sdtest_ppc2dll\sdtest_ppc2dll.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SpeedDemonLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "speeddemondll"=.\speeddemondll.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name sdmon
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,30 @@
+SpeedDemon To-Do
+----------------
+
+[X] Support resizing hash table
+[X] Support watching for process exit and flush
+[X] Keep seperate stacks for each thread
+[X] Keep seperate timings for each thread (seperate m_lastclocks)
+[X] Use fast locking for each platform to synchronize performance counter access
+[X] Do GUI
+
+[X] Support longjmp and exception handling. Note when an 'enter' happens out of order, or when we exit a different procedure than we were just in.
+[X] Support LoadLibrary and module detection
+[X] thread context list and filter
+[X] sortable function list
+[X] function-specific view
+[X] source view with line markups
+
+
+xxx: optimize rehash by storing hash key in slot
+xxx: find way to tag libraries for wince
+
+
+
+
+Version 2
+-----------
+1. add 'severity coloring' icons to function list, and use same colorings in the code graph view, and in the detail view.
+2. allow code graph to be of variable level of detail, allowing 'n' levels ahead and behind the current function
+3. add pulldown to code graph to go to various thread entry points.
+4. Self-cleaning sdmon.exe?

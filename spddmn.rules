@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="SpeedDemon Rules"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="ARM Assembler"
+			DisplayName="ARM Assembler"
+			CommandLine="armasm &quot;$(InputPath)&quot; &quot;$(IntDir)\$(InputName).obj&quot;"
+			Outputs="&quot;$(IntDir)\$(InputName).obj&quot;"
+			FileExtensions="*.asm"
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

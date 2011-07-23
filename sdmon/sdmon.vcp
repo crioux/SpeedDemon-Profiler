@@ -1,0 +1,286 @@
+# Microsoft eMbedded Visual Tools Project File - Name="sdmon" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARMV4) Application" 0xa301
+# TARGTYPE "Win32 (WCE emulator) Application" 0xa601
+
+CFG=sdmon - Win32 (WCE emulator) X86EMU
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "sdmon.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "sdmon.vcn" CFG="sdmon - Win32 (WCE emulator) X86EMU"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "sdmon - Win32 (WCE emulator) X86EMU" (based on "Win32 (WCE emulator) Application")
+!MESSAGE "sdmon - Win32 (WCE ARMV4) PXA255" (based on "Win32 (WCE ARMV4) Application")
+!MESSAGE "sdmon - Win32 (WCE ARMV4) PXA270" (based on "Win32 (WCE ARMV4) Application")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+
+!IF  "$(CFG)" == "sdmon - Win32 (WCE emulator) X86EMU"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "emulatorX86EMU"
+# PROP BASE Intermediate_Dir "emulatorX86EMU"
+# PROP BASE CPU_ID "{32E52003-403E-442D-BE48-DE10F8C6131D}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "X86EMU"
+# PROP Intermediate_Dir "X86EMU"
+# PROP CPU_ID "{32E52003-403E-442D-BE48-DE10F8C6131D}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d "$(CePlatform)" /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "_X86_" /d "x86" /d "_i386_" /r
+# ADD RSC /l 0x409 /d "$(CePlatform)" /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "_X86_" /d "x86" /d "_i386_" /r
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "_i386_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "i_386_" /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /YX /Gs8192 /GF /c
+# ADD CPP /nologo /W3 /Oxt /Ob2 /I ".." /I "..\speeddemonlib" /D "DEBUG" /D "_i386_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "i_386_" /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D SD_ARCH=2 /YX /Gs8192 /GF /c
+# SUBTRACT CPP /Z<none>
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib $(CEx86Corelibc) /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"WinMainCRTStartup" /debug /nodefaultlib:"OLDNAMES.lib" /nodefaultlib:$(CENoDefaultLib) /subsystem:$(CESubsystem) /MACHINE:IX86
+# ADD LINK32 coredll.lib /nologo /entry:"WinMain" /debug /nodefaultlib:"OLDNAMES.lib" /nodefaultlib:$(CENoDefaultLib) /nodefaultlib /subsystem:$(CESubsystem) /MACHINE:IX86
+# Begin Special Build Tool
+TargetDir=.\X86EMU
+TargetPath=.\X86EMU\sdmon.exe
+TargetName=sdmon
+SOURCE="$(InputPath)"
+PostBuild_Desc=Generating Include File
+PostBuild_Cmds=..\mkinclude $(TargetPath) $(TargetDir)\$(TargetName).inl g_$(TargetName)
+# End Special Build Tool
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA255"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4PXA255"
+# PROP BASE Intermediate_Dir "ARMV4PXA255"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "PXA255"
+# PROP Intermediate_Dir "PXA255"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "DEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "DEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+CPP="C:\Program Files\Microsoft eMbedded C++ 4.0\EVC\WCE500\bin\xicle44"
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Oxt /Ob2 /I ".." /I "..\speeddemonlib" /D "DEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D SD_ARCH=4 /YX /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /Z<none>
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32="C:\Program Files\Microsoft eMbedded C++ 4.0\EVC\WCE500\bin\xilinke44"
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"WinMainCRTStartup" /debug /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 coredll.lib /nologo /entry:"WinMain" /debug /nodefaultlib:"$(CENoDefaultLib)" /nodefaultlib /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# Begin Special Build Tool
+TargetDir=.\PXA255
+TargetPath=.\PXA255\sdmon.exe
+TargetName=sdmon
+SOURCE="$(InputPath)"
+PostBuild_Desc=Generating Include File
+PostBuild_Cmds=..\mkinclude $(TargetPath) $(TargetDir)\$(TargetName).inl g_$(TargetName)
+# End Special Build Tool
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA270"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4PXA270"
+# PROP BASE Intermediate_Dir "ARMV4PXA270"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "PXA270"
+# PROP Intermediate_Dir "PXA270"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "DEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "DEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+CPP="C:\Program Files\Microsoft eMbedded C++ 4.0\EVC\WCE500\bin\xicle44"
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Oxt /Ob2 /I ".." /I "..\speeddemonlib" /D "DEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D SD_ARCH=3 /YX /M$(CECrtMTDebug) /c
+# SUBTRACT CPP /Z<none>
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32="C:\Program Files\Microsoft eMbedded C++ 4.0\EVC\WCE500\bin\xilinke44"
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"WinMainCRTStartup" /debug /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 coredll.lib /nologo /entry:"WinMain" /debug /nodefaultlib:"$(CENoDefaultLib)" /nodefaultlib /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# Begin Special Build Tool
+TargetDir=.\PXA270
+TargetPath=.\PXA270\sdmon.exe
+TargetName=sdmon
+SOURCE="$(InputPath)"
+PostBuild_Desc=Generating Include File
+PostBuild_Cmds=..\mkinclude $(TargetPath) $(TargetDir)\$(TargetName).inl g_$(TargetName)
+# End Special Build Tool
+
+!ENDIF 
+
+# Begin Target
+
+# Name "sdmon - Win32 (WCE emulator) X86EMU"
+# Name "sdmon - Win32 (WCE ARMV4) PXA255"
+# Name "sdmon - Win32 (WCE ARMV4) PXA270"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\CBufferedOutputFile.cpp
+
+!IF  "$(CFG)" == "sdmon - Win32 (WCE emulator) X86EMU"
+
+DEP_CPP_CBUFF=\
+	".\CBufferedOutputFile.h"\
+	
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA255"
+
+DEP_CPP_CBUFF=\
+	".\CBufferedOutputFile.h"\
+	
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA270"
+
+DEP_CPP_CBUFF=\
+	".\CBufferedOutputFile.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\speeddemonlib\perfinfo.inl
+# End Source File
+# Begin Source File
+
+SOURCE=..\speeddemonlib\pxacounter.asm
+
+!IF  "$(CFG)" == "sdmon - Win32 (WCE emulator) X86EMU"
+
+# PROP Exclude_From_Build 1
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA255"
+
+# Begin Custom Build - Assembling $(InputPath)
+IntDir=.\PXA255
+InputPath=..\speeddemonlib\pxacounter.asm
+InputName=pxacounter
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	armasm -cpu xscale -o $(IntDir)\$(InputName).obj $(InputPath)
+
+# End Custom Build
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA270"
+
+# Begin Custom Build - Assembling $(InputPath)
+IntDir=.\PXA270
+InputPath=..\speeddemonlib\pxacounter.asm
+InputName=pxacounter
+
+"$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	armasm -cpu xscale -o $(IntDir)\$(InputName).obj $(InputPath)
+
+# End Custom Build
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\sdmon.cpp
+
+!IF  "$(CFG)" == "sdmon - Win32 (WCE emulator) X86EMU"
+
+DEP_CPP_SDMON=\
+	"..\sdconfig.h"\
+	"..\speeddemonlib\perfinfo.inl"\
+	"..\speeddemonlib\pxa255.inl"\
+	"..\speeddemonlib\pxa270.inl"\
+	"..\speeddemonlib\x86.inl"\
+	".\CBufferedOutputFile.h"\
+	
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA255"
+
+DEP_CPP_SDMON=\
+	"..\sdconfig.h"\
+	"..\speeddemonlib\perfinfo.inl"\
+	"..\speeddemonlib\pxa255.inl"\
+	"..\speeddemonlib\pxa270.inl"\
+	"..\speeddemonlib\x86.inl"\
+	".\CBufferedOutputFile.h"\
+	
+
+!ELSEIF  "$(CFG)" == "sdmon - Win32 (WCE ARMV4) PXA270"
+
+DEP_CPP_SDMON=\
+	"..\sdconfig.h"\
+	"..\speeddemonlib\perfinfo.inl"\
+	"..\speeddemonlib\pxa255.inl"\
+	"..\speeddemonlib\pxa270.inl"\
+	"..\speeddemonlib\x86.inl"\
+	".\CBufferedOutputFile.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\CBufferedOutputFile.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\sdconfig.h
+# End Source File
+# End Group
+# End Target
+# End Project
